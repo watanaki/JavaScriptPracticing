@@ -229,7 +229,7 @@ const highlightCurrentSong = (lastId) => {
     lastEl.removeAttribute("aria-current");
   }
   const songToHighlight = document.getElementById(`song-${userData?.currentSong?.id}`);
-  if (songToHighlight !== lastId)
+  if (songToHighlight !== lastId && songToHighlight !== null)
     songToHighlight.setAttribute('aria-current', 'true');
 };
 
