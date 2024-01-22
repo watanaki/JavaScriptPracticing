@@ -310,15 +310,6 @@ function dbClickInfo(index) {
 
 
 
-
-// playButton.addEventListener("click", () => {
-//   if (userData?.currentSong === null) {
-//     playSong(userData?.songs[0]?.id);
-//   } else {
-//     playSong(userData?.currentSong.id);
-//   }
-// });
-// pauseButton.addEventListener("click", pauseSong);
 playOrPause.addEventListener("click", () => {
   userData.isPlaying ? pauseSong() :
     playSong(userData?.currentSong === null ? userData?.songs[0]?.id : userData?.currentSong.id);
