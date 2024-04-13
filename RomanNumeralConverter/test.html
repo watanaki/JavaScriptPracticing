@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Roman Numeral Converter</title>
+</head>
+
+<body>
+  <form id="form" class="form">
+    <fieldset>
+      <label for="number">Enter a Number:</label><br />
+      <button type="submit" id="convert-btn">Convert</button>
+    </fieldset>
+  </form>
+  <script>
+    document.getElementById("convert-btn").addEventListener("click", (e) => {
+      e.preventDefault();
+    })
+  </script>
+  <input type="number" id="number" />
+</body>
+
+</html>
